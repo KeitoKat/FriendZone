@@ -9,9 +9,12 @@ const addFriend = (e) => {
   e.preventDefault();
 
   // update info
-  let friend = {name: document.getElementById("name").value,
-                timezone: document.getElementById("timezone").value,
-                contact: document.getElementById("contact").value};
+  let friend = {
+                color: document.getElementById("set-color-identity").value,
+                name: document.getElementById("set-name").value,
+                timezone: document.getElementById("set-timezone-offset").value,
+                // contact: document.getElementById("set-contact").value
+              };
 
   // push info to friends array
   friends.push(friend);
