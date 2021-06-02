@@ -12,31 +12,70 @@
 </head>
 <body>
   <!-- FRIEND LIST  -->
-  <div class="friend-list container">
-    <h4>Friend List</h4>
-    <p value="">Me</p>
-    <p value="">You</p>
-    <p value="">You</p>
-    <p value="">You</p>
-  </div>
 
-  <!-- FEATURE: addFriend() -->
-   
+ <div class="friend-list container m-2 px-2">
+    <h4>Friend List</h4>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Color</th>
+          <th scope="col">Name</th>
+          <th scope="col">Timezone</th>
+          <th scope="col">Contact</th>
+          <th scope="col">Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">
+            <input type="color" class="form-control form-control-color" id="color-identity" value="#CD5C5C" title="Change color">
+          </th>
+          <td>Mark</td>
+          <td>(GMT -12:00) Eniwetok, Kwajalein</td>
+          <td>@insta/Markyboy</td>
+          <td><button class="btn">...</button></td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <input type="color" class="form-control form-control-color" id="color-identity" value="#F08080" title="Change color">
+          </th>
+          <td>Jacob</td>
+          <td>(GMT -12:00) Eniwetok, Kwajalein</td>
+          <td>@linkedIn/Jacab-Langlo</td>
+          <td><button class="btn">...</button></td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <input type="color" class="form-control form-control-color" id="color-identity" value="#FFA07A" title="Change color">
+          </th>
+          <td>Jacob</td>
+          <td>(GMT -12:00) Eniwetok, Kwajalein</td>
+          <td>@twitter/Jaboc-Jacob</td>
+          <td><button class="btn">...</button></td>
+        </tr>
+        </tr>
+      </tbody>
+    </table>
+ 
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <!-- FEATURE: addFriend() -->  
   <form class="row m-5 gy-2 gx-3 d-flex justify-content-center">
     <!-- COLOR IDENTITY-->
     <div class="col-auto mb-3">
-      <input type="color" class="form-control form-control-color" id="color-identity" value="	#00000" title="Choose a color for your friend">
+      <input type="color" class="form-control form-control-color" id="set-color-identity" value="	#00000" title="Choose a color for your friend">
       <label for="ColorIdentity" class="">Color</label>
     </div>
      <!-- NAME -->
     <div class="col-auto form-floating mb-3">
-      <input id="name" class="form-control" name="name" value="" type="text" placeholder="Kate"/>
+      <input id="set-name" class="form-control" name="name" value="" type="text" placeholder="Kate"/>
       <label class="" for="floatingInput">Name</label>
     </div>
      <!-- TIMEZONE OFFSET-->
     <div class="col-auto form-floating mb-3">
       <label class="" for="autoSizingSelect"></label>
-      <select name="timezone_offset" class="form-select" id="timezone-offset">
+      <select name="timezone_offset" class="form-select" id="set-timezone-offset">
         <option value="" selected>-- Timezone --</option>
         <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
         <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
